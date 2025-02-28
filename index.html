@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Менеджер задач</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="https://kit.fontawesome.com/08db79b8a3.js" crossorigin="anonymous"></script>
+  <script defer src="js/script.js"></script>
+
+  <!-- <link rel="stylesheet" href="css/slick.css"> -->
+</head>
+<body>
+
+  <!-- Дашборд -->
+  <div class="container">
+    <div class="dashboard__time">
+      <div class="dashboard__time-today">13.02.2025</div>
+      <div class="dashboard__time-sity">Горловка, Россия</div>
+    </div>
+    
+
+
+    <div class="dashboard__slider">
+      <div class="slide slide--1">
+        <div class="slide__tasks-today slide__tasks-today--1">
+          <h3>Сегодняшние задачи:</h3>
+          <ul class="dashboard__tasks-today-list--1">
+              <li class="dashboard__tasks-today-list-link">Нет задач</li>
+          </ul>
+        </div>
+
+        <div class="dashboard__weather weather--1">
+          <!-- <div class="weather__box"> 
+            <img id="weather__icon" src="img/weather-forecasting.png" alt="Погода">
+            <h2 class="weather__title">Погода сейчас</h2>
+            <div class="weather__temp">Температура воздуха: °C: -5</div>
+            <div class="weather__feeling">По ощущению: °C: -12</div>
+            <div class="weather__cloud">Облочность: 95%</div>
+            <div class="weather__wind">Ветер: 5 м/сек</div>
+          </div> -->
+            
+            
+          
+      </div>
+
+      </div>
+      <div class="slide slide--2">
+        <div class="slide__tasks-today slide__tasks-today--2">
+          <h3>Сегодняшние задачи:</h3>
+          <ul class="dashboard__tasks-today-list--2">
+              <li class="dashboard__tasks-today-list-link">Нет задач</li>
+          </ul>
+        </div>
+
+        <div class="dashboard__weather weather--2">
+          <!-- <div class="weather__box"> 
+            <img id="weather__icon" src="img/weather-forecasting.png" alt="Погода">
+            <h2 class="weather__title">Погода сейчас</h2>
+            <div class="weather__temp">Температура воздуха: °C: -5</div>
+            <div class="weather__feeling">По ощущению: °C: -12</div>
+            <div class="weather__cloud">Облочность: 95%</div>
+            <div class="weather__wind">Ветер: 5 м/сек</div>
+          </div> -->
+            
+            
+          
+      </div>
+      </div>
+      <div class="slide slide--3">
+        <div class="slide__tasks-today slide__tasks-today--3">
+          <h3>Сегодняшние задачи:</h3>
+          <ul class="dashboard__tasks-today-list--3">
+              <li class="dashboard__tasks-today-list-link">Нет задач</li>
+          </ul>
+        </div>
+
+        <div class="dashboard__weather weather--3">
+          <!-- <div class="weather__box"> 
+            <img id="weather__icon" src="img/weather-forecasting.png" alt="Погода">
+            <h2 class="weather__title">Погода сейчас</h2>
+            <div class="weather__temp">Температура воздуха: °C: -5</div>
+            <div class="weather__feeling">По ощущению: °C: -12</div>
+            <div class="weather__cloud">Облочность: 95%</div>
+            <div class="weather__wind">Ветер: 5 м/сек</div>
+          </div> -->
+            
+            
+          
+      </div>
+      </div>
+
+      <div class="sliders-btns">
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </div>
+
+</div>
+  
+
+  <!-- Менеджер задач --> 
+   <div class="container">
+    <div class="task-manager-form">
+      <h2 class="task-manager-form__title">Менеджер задач</h2>
+      <div class="task-manager-form__input">
+        <div class="task-manager-form__input-title">
+          <label for="title-task">Заголовок: </label>
+          <input type="text" id="title-task" class="task-manager-form__input-text" placeholder="Придумайте заголовок" value="Тренировка в субботу">
+        </div>
+        <div class="task-manager-form__input-text-and-btn">
+         <textarea name="text" id="textarea" placeholder="Введите описание задачи"
+         class="task-manager-form__input-textarea">Субботняя тренировка: разминка, кардио, силовые упражнения и растяжка. Улучшаем выносливость, укрепляем мышцы и заряжаемся энергией на день!</textarea>
+
+         <div class="task-manager-form__input-date">
+          <label for="date-task">Введите дэдлайн</label>
+          <input class="datetime-local-task" type="datetime-local" name="datetime-local" id="date-task" min="2024-03-08" value="2025-02-25T11:13">
+         </div>
+
+          <button class="task-manager-form__add-task">Добавить</button>
+        </div>
+
+      </div>
+      
+  </div>
+  <div class="task-manager-tabs task-tabs">
+    <div class="task-tabs__delete tab-item" data-tasktab="2">Удалённые задачи</div>
+    <div class="task-tabs__active tab-item tab__active" data-tasktab="1">Активные задачи</div>
+  </div>
+  <div class="task-manager-cont task-manager-container-1">
+    <div class="taskIsNot">Пока нет задач.</div>
+    <!-- <div class="task-manager__container-item task-item">
+      <div class="task-item__head">
+        <div class="task-item__head-title"><span> Задача 1:</span> Обучение 7 часов</div>
+        <div class="task-item__head-timer">Осталось  <span>1</span> дней, <span>23</span> часов, <span>15</span> мин, <span>35</span> сек</div>
+        <button class="task-item__head-btn">удалить задачу</button>
+      </div>
+      <div class="task-item__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus natus sunt aliquid molestiae porro itaque ipsum et aut tempora quas iste dignissimos deserunt laboriosam dolor, architecto necessitatibus. Distinctio, blanditiis sapiente.</div>
+    </div> -->
+    
+
+  </div>
+  <div class="task-manager-cont task-manager-container-2 hidden">
+    <div class="taskIsNot">Пока нет задач.</div>
+    <!-- <div class="task-manager__container-item task-item">
+      <div class="task-item__head">
+        <div class="task-item__head-title"><span> Задача 1:</span> Обучение 7 часов</div>
+        <div class="task-item__head-timer">Осталось  <span>1</span> дней, <span>23</span> часов, <span>15</span> мин, <span>35</span> сек</div>
+      </div>
+      <div class="task-item__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus natus sunt aliquid molestiae porro itaque ipsum et aut tempora quas iste dignissimos deserunt laboriosam dolor, architecto necessitatibus. Distinctio, blanditiis sapiente.</div>
+    </div> -->
+    
+
+  </div>
+   </div>
+
+
+</body>
+</html>
