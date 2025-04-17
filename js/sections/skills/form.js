@@ -286,12 +286,6 @@ function initFormModule() {
     function controlForm (objDataError) {
         const form = document.querySelector(".skills__form");
 
-        if (objDataError.checkbox) {
-            if (document.querySelector(".errorFormGeneral")) {
-                document.querySelector(".errorFormGeneral").remove();
-            }
-        }
-
         // Подставляю нужное значение в поля формы
         firstNameInput.value = objDataError.name;
         emailInput.value = objDataError.email;
@@ -314,6 +308,12 @@ function initFormModule() {
         
         // Способ dispatchEvent(new Event("submit") - программно "нажать" на отправку формы, как будто пользователь сам нажал кнопку Submit или Enter.
         form.dispatchEvent(new Event("submit"));
+
+        if (objDataError === testDataZero) {
+            if (document.querySelector(".errorFormGeneral")) {
+                document.querySelector(".errorFormGeneral").remove();
+            }
+        }
 
 
 
