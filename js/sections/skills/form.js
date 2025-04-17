@@ -263,7 +263,7 @@ function initFormModule() {
 
       const testDataZero = {
         name: "Алексей",
-        email: "aleksey.@mail.ru", // 
+        email: "test@email.com", // 
         phone: "+7 (999) 123-45-67",
         comment: "Просто комментарий.",
         checkbox: true,
