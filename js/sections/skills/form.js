@@ -263,7 +263,7 @@ function initFormModule() {
 
       const testDataZero = {
         name: "Алексей",
-        email: "aleksey.@mail.ru", // ❌ нет @
+        email: "aleksey.@mail.ru", // 
         phone: "+7 (999) 123-45-67",
         comment: "Просто комментарий.",
         checkbox: true,
@@ -285,6 +285,12 @@ function initFormModule() {
 
     function controlForm (objDataError) {
         const form = document.querySelector(".skills__form");
+
+        if (objDataError.checkbox) {
+            if (document.querySelector(".errorFormGeneral")) {
+                document.querySelector(".errorFormGeneral").remove();
+            }
+        }
 
         // Подставляю нужное значение в поля формы
         firstNameInput.value = objDataError.name;
