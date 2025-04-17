@@ -299,21 +299,10 @@ function initFormModule() {
             avatarFile = objDataError.file;
         }
 
-        // Зафиксировать скролл, чтобы при расширении формы, страница не дергалась
-        // window.scrollTo({
-        //     top: window.scrollY, // остаёмся на месте
-        //     behavior: "auto"
-        //   });
           
         
         // Способ dispatchEvent(new Event("submit") - программно "нажать" на отправку формы, как будто пользователь сам нажал кнопку Submit или Enter.
         form.dispatchEvent(new Event("submit"));
-
-        if (objDataError === testDataZero) {
-            if (document.querySelector(".errorFormGeneral")) {
-                document.querySelector(".errorFormGeneral").remove();
-            }
-        }
 
 
 
@@ -442,15 +431,6 @@ function initFormModule() {
 
                 }
 
-                if (hasErrors === true) {
-                    if (!document.querySelector(".errorFormGeneral")) {
-                        document.querySelector(".form__checkbox").insertAdjacentHTML("afterend", `
-                        
-                            <div class="errorFormGeneral">${checkbox}</div>
-                            
-                            `);
-                    }
-                }
 
     
                 
@@ -464,11 +444,6 @@ function initFormModule() {
                     }
                 });
 
-                input.addEventListener("focus", function (e) {
-                    if (document.querySelector(".errorFormGeneral")) {
-                        document.querySelector(".errorFormGeneral").remove();
-                    }
-                });
     
         }
 
