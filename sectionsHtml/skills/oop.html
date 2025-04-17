@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <div class="skills__oop">
+
+        <div class="skills__oop-info">
+            <h2 class="skills__oop-info-title">Демонстрация ООП в действии</h2>
+            <p class="skills__oop-info-text">
+              Этот интерактивный пример показывает, как работает объектно-ориентированный подход в JavaScript. Пользователи (как объекты) создаются автоматически по заданным шаблонам.
+            </p>
+            <p class="skills__oop-info-instruction">
+              Нажмите <strong>«Старт»</strong>, чтобы начать автоматическую генерацию карточек пользователей. Каждые 2 секунды создаётся новый объект пользователя, который отображается в виде карточки. <br>
+              Вы можете остановить процесс в любой момент кнопкой <strong>«Стоп»</strong>, а также очистить все созданные карточки кнопкой <strong>«Очистить список»</strong>. Все поля формы блокируются во время генерации.
+            </p>
+
+            <div class="skills__oop-info-stack-wrapper">
+                <h3 class="skills__oop-info-stack-title">Использованный стек</h3>
+                <ul class="skills__oop-info-stack">
+                  <li class="skills__oop-info-stack-item">Объектно-ориентированное программирование (ООП)</li>
+                  <li class="skills__oop-info-stack-item">Асинхронный JavaScript (setInterval)</li>
+                  <li class="skills__oop-info-stack-item">Работа с DOM и событиями</li>
+                  <li class="skills__oop-info-stack-item">Динамическое создание и вставка HTML</li>
+                  <li class="skills__oop-info-stack-item">Анимация появления карточек</li>
+                  <li class="skills__oop-info-stack-item">Контроль состояния приложения (старт/стоп/очистка)</li>
+                  <li class="skills__oop-info-stack-item">Работа с формой и блокировка ввода</li>
+                </ul>
+            </div>
+              
+            
+        </div>
+          
+
+        <div class="skills__oop-controls">
+            <button class="skills__oop-controls-btn skills__oop-controls-btn_start">Старт</button>
+            <button class="skills__oop-controls-btn skills__oop-controls-btn_stop">Стоп</button>
+            <button class="skills__oop-controls-btn skills__oop-controls-btn_clear">Очистить список</button>
+        </div>
+
+        <div class="skills__oop-data">
+            <form class="skills__oop-data-form">
+                <div class="skills__oop-data-form-field">
+                    <label for="oop-name" class="skills__oop-data-form-label">Имя</label>
+                    <input
+                      type="text"
+                      id="oop-name"
+                      name="name"
+                      class="skills__oop-data-form-input"
+                      placeholder="Введите имя"
+                      required
+                    >
+                  </div>
+                
+                  <div class="skills__oop-data-form-field">
+                    <label for="oop-email" class="skills__oop-data-form-label">Email</label>
+                    <input
+                      type="email"
+                      id="oop-email"
+                      name="email"
+                      class="skills__oop-data-form-input"
+                      placeholder="example@mail.com"
+                      required
+                    >
+                  </div>
+                
+                  <div class="skills__oop-data-form-field">
+                    <label for="oop-age" class="skills__oop-data-form-label">Возраст</label>
+                    <input
+                      type="number"
+                      id="oop-age"
+                      name="age"
+                      class="skills__oop-data-form-input"
+                      placeholder="Введите возраст"
+                      min="1"
+                      max="120"
+                      required
+                    >
+                  </div>
+                
+                
+                  <button type="submit" class="skills__oop-data-form-btn">Создать пользователя</button>
+            </form>
+            <div class="skills__oop-data-preview">
+                <h2 class="skills__oop-data-preview-title">Preview</h2>
+                <div class="skills__oop-data-preview-container">
+                <!-- <div class="skills__oop-data-preview-card preview-card">
+                    <div class="preview-card__info">
+                        <h2 class="preview-card__info-name"></h2>
+                        <div class="preview-card__info-age"></div>
+                        <div class="preview-card__info-email"></div>
+                    </div>
+                </div> -->
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="skills__oop-cards">
+            <!-- сюда будут добавляться карточки -->
+        </div>
+          
+    </div>
+</html>

@@ -4,158 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Менеджер задач</title>
+  <title>Портфолио</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+  <!-- <link rel="preload" href="styles/css/skills.css" as="style"> -->
   <script defer src="https://kit.fontawesome.com/08db79b8a3.js" crossorigin="anonymous"></script>
+  <!-- где-нибудь в основном шаблоне -->
+  <script src="https://cdn.jsdelivr.net/npm/validator@13.9.0/validator.min.js"></script>
+
+  <script defer src="js/loadComponents.js"></script>
   <script defer src="js/script.js"></script>
 
-  <!-- <link rel="stylesheet" href="css/slick.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+
+
 </head>
 <body>
-
-  <!-- Дашборд -->
-  <div class="container">
-    <div class="dashboard__time">
-      <div class="dashboard__time-today">13.02.2025</div>
-      <div class="dashboard__time-sity">Горловка, Россия</div>
-    </div>
-    
-
-
-    <div class="dashboard__slider">
-      <div class="slide slide--1">
-        <div class="slide__tasks-today slide__tasks-today--1">
-          <h3>Сегодняшние задачи:</h3>
-          <ul class="dashboard__tasks-today-list--1">
-              <li class="dashboard__tasks-today-list-link">Нет задач</li>
-          </ul>
-        </div>
-
-        <div class="dashboard__weather weather--1">
-          <!-- <div class="weather__box"> 
-            <img id="weather__icon" src="img/weather-forecasting.png" alt="Погода">
-            <h2 class="weather__title">Погода сейчас</h2>
-            <div class="weather__temp">Температура воздуха: °C: -5</div>
-            <div class="weather__feeling">По ощущению: °C: -12</div>
-            <div class="weather__cloud">Облочность: 95%</div>
-            <div class="weather__wind">Ветер: 5 м/сек</div>
-          </div> -->
-            
-            
-          
-      </div>
-
-      </div>
-      <div class="slide slide--2">
-        <div class="slide__tasks-today slide__tasks-today--2">
-          <h3>Сегодняшние задачи:</h3>
-          <ul class="dashboard__tasks-today-list--2">
-              <li class="dashboard__tasks-today-list-link">Нет задач</li>
-          </ul>
-        </div>
-
-        <div class="dashboard__weather weather--2">
-          <!-- <div class="weather__box"> 
-            <img id="weather__icon" src="img/weather-forecasting.png" alt="Погода">
-            <h2 class="weather__title">Погода сейчас</h2>
-            <div class="weather__temp">Температура воздуха: °C: -5</div>
-            <div class="weather__feeling">По ощущению: °C: -12</div>
-            <div class="weather__cloud">Облочность: 95%</div>
-            <div class="weather__wind">Ветер: 5 м/сек</div>
-          </div> -->
-            
-            
-          
-      </div>
-      </div>
-      <div class="slide slide--3">
-        <div class="slide__tasks-today slide__tasks-today--3">
-          <h3>Сегодняшние задачи:</h3>
-          <ul class="dashboard__tasks-today-list--3">
-              <li class="dashboard__tasks-today-list-link">Нет задач</li>
-          </ul>
-        </div>
-
-        <div class="dashboard__weather weather--3">
-          <!-- <div class="weather__box"> 
-            <img id="weather__icon" src="img/weather-forecasting.png" alt="Погода">
-            <h2 class="weather__title">Погода сейчас</h2>
-            <div class="weather__temp">Температура воздуха: °C: -5</div>
-            <div class="weather__feeling">По ощущению: °C: -12</div>
-            <div class="weather__cloud">Облочность: 95%</div>
-            <div class="weather__wind">Ветер: 5 м/сек</div>
-          </div> -->
-            
-            
-          
-      </div>
-      </div>
-
-      <div class="sliders-btns">
-        <button class="slider__btn slider__btn--left">&larr;</button>
-        <button class="slider__btn slider__btn--right">&rarr;</button>
-        <div class="dots"></div>
-      </div>
-    </div>
-
-</div>
   
 
-  <!-- Менеджер задач --> 
-   <div class="container">
-    <div class="task-manager-form">
-      <h2 class="task-manager-form__title">Менеджер задач</h2>
-      <div class="task-manager-form__input">
-        <div class="task-manager-form__input-title">
-          <label for="title-task">Заголовок: </label>
-          <input type="text" id="title-task" class="task-manager-form__input-text" placeholder="Придумайте заголовок" value="Тренировка в субботу">
-        </div>
-        <div class="task-manager-form__input-text-and-btn">
-         <textarea name="text" id="textarea" placeholder="Введите описание задачи"
-         class="task-manager-form__input-textarea">Субботняя тренировка: разминка, кардио, силовые упражнения и растяжка. Улучшаем выносливость, укрепляем мышцы и заряжаемся энергией на день!</textarea>
 
-         <div class="task-manager-form__input-date">
-          <label for="date-task">Введите дэдлайн</label>
-          <input class="datetime-local-task" type="datetime-local" name="datetime-local" id="date-task" min="2024-03-08" value="2025-02-25T11:13">
-         </div>
-
-          <button class="task-manager-form__add-task">Добавить</button>
-        </div>
-
+  <!-- <header id="header">
+    <div class="header">
+      <div class="auth">
+        <a href="#" class="login-btn">Войти</a>
+        <a href="#" class="register-btn">Регистрация</a>
       </div>
-      
   </div>
-  <div class="task-manager-tabs task-tabs">
-    <div class="task-tabs__delete tab-item" data-tasktab="2">Удалённые задачи</div>
-    <div class="task-tabs__active tab-item tab__active" data-tasktab="1">Активные задачи</div>
-  </div>
-  <div class="task-manager-cont task-manager-container-1">
-    <div class="taskIsNot">Пока нет задач.</div>
-    <!-- <div class="task-manager__container-item task-item">
-      <div class="task-item__head">
-        <div class="task-item__head-title"><span> Задача 1:</span> Обучение 7 часов</div>
-        <div class="task-item__head-timer">Осталось  <span>1</span> дней, <span>23</span> часов, <span>15</span> мин, <span>35</span> сек</div>
-        <button class="task-item__head-btn">удалить задачу</button>
-      </div>
-      <div class="task-item__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus natus sunt aliquid molestiae porro itaque ipsum et aut tempora quas iste dignissimos deserunt laboriosam dolor, architecto necessitatibus. Distinctio, blanditiis sapiente.</div>
+  </header>  -->
+
+  <aside id="sidebar">
+    <div class="logo">
+      <!-- <a href="index.html"></a> -->
+    </div>
+    <nav class="nav">
+      <ul class="nav__list">
+          <li class="nav__list-item nav__list-item-active" data-page="main">Главная</li>
+          <li class="nav__list-item" data-page="skills">Мои навыки</li>
+          <!-- <li class="nav__list-item" data-page="shop">Магазин скриптов</li> -->
+          <li class="nav__list-item" data-page="reviews">Отзывы</li>
+          <li class="nav__list-item" data-page="warranty">Гарантия</li>
+          <li class="nav__list-item" data-page="contacts">Контакты</li>
+          <!-- <li class="nav__list-item" data-page="modification">Доработка</li> -->
+      </ul>
+    </nav>
+
+    <!-- <div class="auth">
+      <button class="register-btn">Регистрация</button>
+      <button class="login-btn">Войти</button>      
     </div> -->
-    
 
-  </div>
-  <div class="task-manager-cont task-manager-container-2 hidden">
-    <div class="taskIsNot">Пока нет задач.</div>
-    <!-- <div class="task-manager__container-item task-item">
-      <div class="task-item__head">
-        <div class="task-item__head-title"><span> Задача 1:</span> Обучение 7 часов</div>
-        <div class="task-item__head-timer">Осталось  <span>1</span> дней, <span>23</span> часов, <span>15</span> мин, <span>35</span> сек</div>
-      </div>
-      <div class="task-item__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus natus sunt aliquid molestiae porro itaque ipsum et aut tempora quas iste dignissimos deserunt laboriosam dolor, architecto necessitatibus. Distinctio, blanditiis sapiente.</div>
-    </div> -->
-    
 
-  </div>
-   </div>
+</aside>  <!-- Здесь будет меню -->
 
+
+  <main id="main">
+  </main>
+
+  <div id="footer"></div> <!-- Здесь будет подвал -->
+   
 
 </body>
 </html>
