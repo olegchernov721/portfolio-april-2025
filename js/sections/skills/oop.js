@@ -16,115 +16,115 @@ function initOopModule() {
             name: "Мария Смирнова",
             email: "mary19@gmail.com",
             age: 21,
-            photo: "../../img/avatars/user0.webp"
+            photo: "img/avatars/user0.webp"
         },
         {
             name: "Екатерина Орлова",
             email: "katya.orlova22@gmail.com",
             age: 22,
-            photo: "../../img/avatars/user1.webp"
+            photo: "img/avatars/user1.webp"
         },
         {
             name: "Алина Козлова",
             email: "alina_kz@gmail.com",
             age: 19,
-            photo: "../../img/avatars/user2.webp"
+            photo: "img/avatars/user2.webp"
         },
         {
             name: "Наталья Сидорова",
             email: "nata.sid@mail.ru",
             age: 23,
-            photo: "../../img/avatars/user3.webp"
+            photo: "img/avatars/user3.webp"
         },
         {
             name: "София Попова",
             email: "sofia.popova1999@yandex.ru",
             age: 25,
-            photo: "../../img/avatars/user4.webp"
+            photo: "img/avatars/user4.webp"
         },
         {
             name: "Александра Ефимова",
             email: "sasha_efimova@gmail.com",
             age: 20,
-            photo: "../../img/avatars/user5.webp"
+            photo: "img/avatars/user5.webp"
         },
         {
             name: "Виктория Павлова",
             email: "v.pavlova1999@mail.ru",
             age: 24,
-            photo: "../../img/avatars/user6.webp"
+            photo: "img/avatars/user6.webp"
         },
         {
             name: "Дарья Мельникова",
             email: "darya.melnikova@gmail.com",
             age: 22,
-            photo: "../../img/avatars/user7.webp"
+            photo: "img/avatars/user7.webp"
         },
         {
             name: "Анастасия Волкова",
             email: "nastya.vlk@yandex.ru",
             age: 21,
-            photo: "../../img/avatars/user8.webp"
+            photo: "img/avatars/user8.webp"
         },
         {
             name: "Ольга Киселева",
             email: "olga.kis@mail.ru",
             age: 23,
-            photo: "../../img/avatars/user9.webp"
+            photo: "img/avatars/user9.webp"
         },
         {
             name: "Полина Андреева",
             email: "polina.andreeva98@gmail.com",
             age: 20,
-            photo: "../../img/avatars/user10.webp"
+            photo: "img/avatars/user10.webp"
         },
         {
             name: "Вероника Соловьева",
             email: "veronika.solovyova@mail.ru",
             age: 24,
-            photo: "../../img/avatars/user11.webp"
+            photo: "img/avatars/user11.webp"
         },
         {
             name: "Ксения Григорьева",
             email: "ksusha.grig@mail.ru",
             age: 19,
-            photo: "../../img/avatars/user12.webp"
+            photo: "img/avatars/user12.webp"
         },
         {
             name: "Людмила Васильева",
             email: "lyudmila.vas@gmail.com",
             age: 21,
-            photo: "../../img/avatars/user13.webp"
+            photo: "img/avatars/user13.webp"
         },
         {
             name: "Елизавета Морозова",
             email: "liza.morozova@inbox.ru",
             age: 25,
-            photo: "../../img/avatars/user14.webp"
+            photo: "img/avatars/user14.webp"
         },
         {
             name: "Инна Лазарева",
             email: "inna.lazareva@yandex.ru",
             age: 22,
-            photo: "../../img/avatars/user15.webp"
+            photo: "img/avatars/user15.webp"
         },
         {
             name: "Жанна Королёва",
             email: "zhanna.koroleva@gmail.com",
             age: 20,
-            photo: "../../img/avatars/user16.webp"
+            photo: "img/avatars/user16.webp"
         },
         {
             name: "Татьяна Зайцева",
             email: "t.zaitseva2020@mail.ru",
             age: 23,
-            photo: "../../img/avatars/user17.webp"
+            photo: "img/avatars/user17.webp"
         },
         {
             name: "Нина Беляева",
             email: "nina.belyaeva89@gmail.com",
             age: 24,
-            photo: "../../img/avatars/user18.webp"
+            photo: "img/avatars/user18.webp"
         }
         ];
 
